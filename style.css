@@ -1,0 +1,74 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir";
+}
+
+.square {
+  width: 30%; /* 30% of container not body */
+  background: purple;
+  padding-bottom: 30%; /* gives volume to box */
+  float: left;  /* keeps it from stacking */
+  margin: 1.66%; /* margin between boxes */
+  border-radius: 15%;
+  transition: background .6s;
+  -webkit-transition: background .6s;
+  -moz-transition: background .6s;
+}
+
+#container {
+  max-width: 600px;
+  margin: 20px auto; /* centered grid */
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+  line-height: 1.1;
+  text-align: center;
+  background-color: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+#message {
+  display: inline-block;
+  width: 20%; /* although empty, still takes up space */
+}
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+}
+
+.selected {
+  color: white;
+  background: steelblue;
+}
+
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%; /* of containing element */
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all .3s; /* what to animate and how long */
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background: steelblue;
+}
